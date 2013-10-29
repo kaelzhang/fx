@@ -9,10 +9,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@code.dianpingoa.com:neurons/fx.git"
+        "url": "git@github.com:kaelzhang/fx.git"
     },
     "bugs": {
-        "url": ""
+        "url": "https://github.com/kaelzhang/fx/issues"
     },
     "licenses": [
         {
