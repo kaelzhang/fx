@@ -27,7 +27,7 @@
         "test": "grunt test"
     },
     "keywords": [],
-    "main": "index.js",
+    "main": "lib/index.js",
     "cortex": {
         "dependencies": {
             "class": "~1.0.0",
