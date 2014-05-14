@@ -27,13 +27,14 @@
     "animation",
     "fx"
   ],
-  "main": "lib/index.js",
+  "main": "index.js",
   "cortex": {
     "dependencies": {
       "jquery": "~1.9.0",
       "events": "~1.0.5",
       "util": "~1.0.4",
-      "hexrgb": "~0.0.1"
+      "hexrgb": "~0.0.1",
+      "lang": "~1.0.0"
     },
     "asyncDependencies": {},
     "devDependencies": {

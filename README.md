@@ -33,12 +33,36 @@ and install dependencies
 Then, use `require` method in your module
     
     var fx = require('fx');
-    
-Finally, start cortex server
-    
-    ctx server
-    
-Then cortex will care all the rest.
+
+## Usage
+
+```javascript
+var Fx = require('fx').Fx;
+
+var tween = new Fx(element, {
+    duration: 500,
+    unit: 'px'
+}).start('height', 100);
+
+ani.on('complete', function() {
+    // do on complete
+});
+
+var morph = new Fx(element, {
+    duration: 100, 
+    unit: 'px'
+}).start({
+    height: 300,
+    width:  {
+        from: 80, 
+        to: 100,
+        unit: '%'
+    },
+    x: [100, 200]
+});
+
+
+```
 
 
 ## API Documentation
