@@ -1,6 +1,5 @@
 var lang = require('lang');
 
-
 function Transition(transition, params){
     params = lang.makeArray(params);
     var easeIn = function(pos){

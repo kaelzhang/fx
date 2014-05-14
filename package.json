@@ -1,38 +1,44 @@
 {
-    "name": "fx",
-    "description": "Animation and Easing functions",
-    "version": "1.0.0",
-    "homepage": "",
-    "author": {
-        "name": "Kael",
-        "email": "i@kael.me"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:kaelzhang/fx.git"
-    },
-    "bugs": {
-        "url": "https://github.com/kaelzhang/fx/issues"
-    },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "/blob/master/LICENSE-MIT"
-        }
-    ],
-    "engines": {
-        "node": ">= 0.6.0"
-    },
-    "scripts": {
-        "test": "grunt test"
-    },
-    "keywords": [],
-    "main": "lib/index.js",
-    "cortex": {
-        "dependencies": {
-            "class": "~1.0.0",
-            "lang": "~1.0.0",
-            "jquery": "~1.9.2"
-        }
+  "name": "fx",
+  "description": "Animation and Easing functions",
+  "version": "2.0.0",
+  "homepage": "",
+  "author": {
+    "name": "Kael",
+    "email": "i@kael.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kaelzhang/fx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kaelzhang/fx/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "/blob/master/LICENSE-MIT"
     }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "keywords": [
+    "animation",
+    "fx"
+  ],
+  "main": "lib/index.js",
+  "cortex": {
+    "dependencies": {
+      "jquery": "~1.9.0",
+      "events": "~1.0.5",
+      "util": "~1.0.4",
+      "hexrgb": "~0.0.1"
+    },
+    "asyncDependencies": {},
+    "devDependencies": {
+      "assert": "~1.0.1"
+    },
+    "scripts": {}
+  }
 }
