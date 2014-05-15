@@ -1,23 +1,15 @@
 var util = require('util');
-var Render = require('../lib/render');
 var assert = require('assert');
+var $ = require('jquery');
 
+var Render = require('../lib/render');
 
 describe('render', function() {
     var element;
 
     beforeEach(function() {
-        if (typeof window == 'undefined') {
-            element = {
-                styles: {
-                    width: '30px'
-                }
-            };
-        } else {
-            var $ = require('jquery');
-            element = $('<div style="position:absolute;left:10px;background-color:#f2fef0;width:400px">innert test div</div>');
-            $('body').append(element);
-        }
+        element = $('<div id="render-test" style="position:absolute;left:10px;background-color:#f2fef0;width:400px">innert test div</div>');
+        $('body').append(element);
     });
 
     it('constructor', function() {
