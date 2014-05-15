@@ -30,7 +30,7 @@
   "main": "index.js",
   "cortex": {
     "dependencies": {
-      "jquery": "~1.9.0",
+      "jquery": "~1.9.2",
       "events": "~1.0.5",
       "util": "~1.0.4",
       "hexrgb": "~0.0.1",
@@ -38,7 +38,8 @@
     },
     "asyncDependencies": {},
     "devDependencies": {
-      "assert": "~1.0.1"
+      "assert": "~1.0.1",
+      "jquery": "~1.9.2"
     },
     "scripts": {}
   }

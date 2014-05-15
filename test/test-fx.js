@@ -1,23 +1,19 @@
 var assert = require('assert');
 var Fx = require('../index');
 
-if (typeof document == 'undefined') {
-    document = {
-        getElementsByTagName: function() {
-            return [{}];
-        }
-    };
-}
-
-describe.skip('fx', function() {
+describe('fx', function() {
     var fx;
     beforeEach(function() {
-        fx = new Fx(document.getElementsByTagName('body')[0]);
+        var $ = require('jquery');
+        var element = $('<div style="position:absolute;left:10px;background-color:#f2fef0;width:400px">innert test div</div>');
+        $('body').append(element);
+
+        fx = new Fx(element);
     });
 
     it('pause && resume', function(done) {
-        this.timeout(5000);
-        fx.start();
+        this.timeout(10000);
+        fx.start('height', 100, 40);
         fx.on('complete', assert.fail);
         setTimeout(function() {
             fx.pause();
@@ -29,8 +25,8 @@ describe.skip('fx', function() {
         }, 200);
     });
 
-    it('start && complete', function(done) {
-        fx.start();
+    it.only('start && complete', function(done) {
+        fx.start('width', 600);
         fx.on('complete', done);
     });
 
