@@ -1,5 +1,6 @@
 # Cortex
 build/
+neurons/
 .cortex/
 
 # PHP files
